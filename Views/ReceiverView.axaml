@@ -1,0 +1,22 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="700" d:DesignHeight="400"
+             x:Class="Avalonia.PKI.Views.ReceiverView">
+	
+	<Grid  HorizontalAlignment="Left" VerticalAlignment="Center" RowDefinitions="Auto,*" ColumnDefinitions="Auto,*">
+		<StackPanel Width="200" Height="250" Margin="5" VerticalAlignment="Center">
+			<Button Margin="5" FontSize="13" Content="Browse " Click="getAll" BorderBrush="AliceBlue" ></Button>
+			<Button Margin="5" FontSize="13" Content="Delete All" Click="deleteAll" BorderBrush="AliceBlue" ></Button>
+			<Button Margin="5" FontSize="13" Content="Decrypt" Click="decryptFile" BorderBrush="AliceBlue" ></Button>
+			<Button Margin="5" FontSize="13" Content="Validate Signature" Click="validateSignature" BorderBrush="AliceBlue" ></Button>
+			<Button Margin="5" FontSize="13" Content="Validate and Decrypt" Click="decryptAndVerify" BorderBrush="AliceBlue" ></Button>
+			<Button Margin="5" FontSize="13" Content="(?) Help" Click="GoToHelpView" BorderBrush="AliceBlue" ></Button>
+			<Label Name="statusLabel" Content="No any file selected"></Label>
+		</StackPanel>
+		<ContentControl Background="LightBlue" Height="400" Width="300" Name="contentControl" Grid.Row="0" Grid.Column="1"></ContentControl>
+	</Grid>
+
+</UserControl>
+

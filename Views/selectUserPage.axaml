@@ -1,0 +1,43 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:Avalonia.PKI.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="700" d:DesignHeight="400"
+		Width="700" Height="400"
+        x:Class="Avalonia.PKI.Views.selectUserPageControl"
+        MinWidth="700"
+        MinHeight="400"
+        MaxWidth="700"
+        MaxHeight="400"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="Avalonia UI Data Signing Software"
+		Background="White">
+
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+	
+		<Grid VerticalAlignment="Center" HorizontalAlignment="Left" RowDefinitions="Auto,*" ColumnDefinitions="Auto,*">
+			<StackPanel Spacing="15" Background="Azure" Width="200" Height="400" VerticalAlignment="Center" HorizontalAlignment="Center">
+				<Image Margin="15" Source="/Assets/avalonia-logo.ico" Width="50" Height="50"> </Image>
+				<TextBlock Padding="20" FontSize="12" VerticalAlignment="Center" HorizontalAlignment="Center">Select a user-type to continue</TextBlock>
+				<Button Padding="10" Content="Sender (User A)" Name="button1" Click="GoToSenderView" BorderBrush="AliceBlue" HorizontalAlignment="Center"></Button>
+				<Button Padding="10" Content="Receiver (User B)" Name="button2" Click="GoToReceiverView" BorderBrush="AliceBlue" HorizontalAlignment="Center"></Button>
+				<Button Padding="10" Content="Help Page" Click="GoToHelpView" BorderBrush="AliceBlue" HorizontalAlignment="Center"></Button>
+			</StackPanel>
+			<ContentControl Grid.Row="0" Grid.Column="1" Name="contentControl" Width="500"/>
+		</Grid>
+
+
+
+
+
+	
+	
+
+
+
+</Window>

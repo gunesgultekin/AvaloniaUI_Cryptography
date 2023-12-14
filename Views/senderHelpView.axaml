@@ -1,0 +1,34 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="300" d:DesignHeight="400"
+             x:Class="Avalonia.PKI.Views.senderHelpView">
+    
+    <StackPanel Margin="15" HorizontalAlignment="Center" VerticalAlignment="Top">
+        <Image Source="/Assets/help.jpg" Width="60" Height="60"/> 
+        <TextBlock HorizontalAlignment="Center" Text="User A (Sender) Help"
+                   Padding="6.5"
+                   FontStyle="Italic"
+                   FontWeight="Bold"
+                   FontSize="17.5"
+        >
+        </TextBlock>
+        
+        <TextBlock HorizontalAlignment="Center" Text="Button Functionalities"
+                   Padding="15"
+                   FontStyle="Italic"
+                   FontWeight="Bold"
+                   FontSize="15.5"
+        >
+        </TextBlock>
+        
+        <TextBlock   FontSize="9" Padding="10" Text=" * Select file: Opens file picker dialog">  </TextBlock>
+        <TextBlock   FontSize="9" Padding="10" Text=" * Sign File: Creates a digital signature of selected file">  </TextBlock>
+        <TextBlock   HorizontalAlignment="Center" FontSize="9"  Text="then sends to receiver B">  </TextBlock>
+        <TextBlock  FontSize="9" Padding="10" Text=" * Encrypt file: Encrypts selected file then sends to user B">  </TextBlock>
+        <TextBlock HorizontalAlignment="Center" FontSize="9"  Text="also saves encrypted file to /Desktop as Encrypted File">  </TextBlock>
+        
+        
+    </StackPanel>
+</UserControl>

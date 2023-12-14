@@ -1,0 +1,48 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="300" d:DesignHeight="400"
+             x:Class="Avalonia.PKI.Views.errorView"
+             MinHeight="400"
+             MinWidth="500"
+             Background="Brown"
+             >
+    
+    <Grid  VerticalAlignment="Center" HorizontalAlignment="Center" RowDefinitions="Auto,*" ColumnDefinitions="Auto,*">
+        <StackPanel Grid.Column="0" Grid.Row="0" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Image Source="/Assets/serverError.jpg" Width="50" Height="50" Margin="0,0,5,0"/> 
+            <TextBlock 
+                Padding="25"
+                Text="(!) API Error"
+                HorizontalAlignment="Center" VerticalAlignment="Center"
+                FontStyle="Normal"
+                Foreground="White"
+            >
+            </TextBlock>
+        </StackPanel>
+        
+        <StackPanel Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label Name="statusLabel" HorizontalAlignment="Center" FontSize="10" Foreground="White" Content="-">  </Label>
+            <TextBlock Padding="20"
+                       Text=" (!) Make sure the backend service is running"
+                       HorizontalAlignment="Center" VerticalAlignment="Center"
+                       FontWeight="ExtraLight"
+                       Foreground="White"
+                       FontSize="10"
+            >
+            </TextBlock>
+            
+            <TextBlock Padding="2.5"
+                       Text=" (!) Check README.docx in main folder"
+                       HorizontalAlignment="Center" VerticalAlignment="Center"
+                       FontWeight="ExtraLight"
+                       Foreground="White"
+                       FontSize="10"
+            >
+            </TextBlock>
+            
+        </StackPanel>
+    </Grid>
+</UserControl>
+

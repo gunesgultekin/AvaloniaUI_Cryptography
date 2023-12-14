@@ -1,0 +1,35 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="300" d:DesignHeight="400"
+             x:Class="Avalonia.PKI.Views.receiverViewHelp">
+    <StackPanel Margin="20" HorizontalAlignment="Center" VerticalAlignment="Top">
+        <Image Source="/Assets/help.jpg" Width="60" Height="60"/> 
+        <TextBlock HorizontalAlignment="Center" Text="User B (Receiver) Help"
+                   Padding="6.5"
+                   FontStyle="Italic"
+                   FontWeight="Bold"
+                   FontSize="17.5"
+        >
+        </TextBlock>
+        
+        <TextBlock HorizontalAlignment="Center" Text="Button Functionalities"
+                   Padding="15"
+                   FontStyle="Italic"
+                   FontWeight="Bold"
+                   FontSize="15.5"
+        >
+        </TextBlock>
+
+        
+        <TextBlock   FontSize="9" Padding="10" Text=" * Browse: opens the list of all received files">  </TextBlock>
+        <TextBlock   FontSize="9" Padding="10" Text=" * Delete All: delete all received files from database">  </TextBlock>
+        <TextBlock   FontSize="9" Padding="10" Text=" * Decyrpt: Decrypt received Encrypted file">  </TextBlock>
+        <TextBlock  FontSize="9" Padding="10" Text= " * Validate Signature: Check the validity of selected">  </TextBlock>
+        <TextBlock HorizontalAlignment="Center" FontSize="9"  Text="file's digital signature">  </TextBlock>
+        <TextBlock   FontSize="9" Padding="10" Text=" * Validate and Decrypt: Apply Decryption and Validation">  </TextBlock>
+        
+        
+    </StackPanel>
+</UserControl>

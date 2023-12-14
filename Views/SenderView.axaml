@@ -1,0 +1,23 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:avaloniaProgressRing="clr-namespace:AvaloniaProgressRing;assembly=AvaloniaProgressRing"
+             x:Class="Avalonia.PKI.Views.SenderView">
+	<Grid  HorizontalAlignment="Left" VerticalAlignment="Center" RowDefinitions="Auto,*" ColumnDefinitions="Auto,*">
+		<StackPanel Width="200" Height="250" Margin="5" VerticalAlignment="Center">
+			<Button Margin="5" FontSize="13" Content="Select file"  Click="OpenFileButton_Clicked" BorderBrush="AliceBlue" ></Button>
+			<Button Margin="5"  FontSize="13" Content="Sign File" Click="createDigitalSignature"></Button>
+			<Button Margin="5" FontSize="13"  Content="Encrypt File" Click="encryptFile"></Button>
+			<Button Margin="5" FontSize="13" Content="Sign and Encrypt"  Click="signAndEncrypt" BorderBrush="AliceBlue" ></Button>
+			<Button Margin="5"  FontSize="13" Content="(?) Help" Click="GoToHelpView"></Button>
+			<Label FontSize="10" Name="myLabel" Content="No any file selected"></Label>
+		</StackPanel>
+		<ContentControl Background="LightBlue" Name="contentControl" Height="400" Width="300" Grid.Row="0" Grid.Column="1"></ContentControl>
+	</Grid>
+	
+	
+	
+	
+</UserControl>
+
